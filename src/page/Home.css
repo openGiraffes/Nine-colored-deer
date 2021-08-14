@@ -1,0 +1,99 @@
+.Home.Page .SearchLayout {
+    margin-top: 3px;
+}
+.Home.Page .Search {
+    margin: 0px 10px 0 10px;
+    background: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 1);
+    padding: 4px 16px;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    outline: none;
+}
+.Home.Page .Search::-moz-placeholder,
+.Home.Page .Search::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.2);
+}
+.Home.Page .Search.focus {
+    border-color: var(--colorPrimary);
+}
+.Home.Page .SearchLayout .Scan {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    padding: 1px;
+}
+.Home.Page .SearchLayout .Scan.focus {
+    border-radius: 30px;
+    background: var(--colorPrimary20);
+}
+.Home.Page .Tabs {
+    margin-top: 5px;
+    padding: 1px 10px;
+    overflow: -moz-scrollbars-none;
+}
+.Home.Page .Tabs > .Item {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    position: relative;
+    height: 28px;
+    padding: 0 7px;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+.Home.Page .Tabs > .Item .Name {
+    transform-origin: 50% 100%;
+}
+.Home.Page .Tabs > .Item[selected] .Name {
+    color: rgba(0, 0, 0, 1);
+    transform: scale(1.1);
+}
+.Home.Page .Tabs > .Item[selected]::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 2px;
+    border-radius: 2px;
+    width: 20px;
+    content: "";
+    background: var(--colorPrimary);
+}
+.Home.Page .Tabs > .Item.focus::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 20px;
+    border-radius: 15px;
+    width: 100%;
+    content: "";
+    background: var(--colorPrimary);
+    opacity: 0.2;
+}
+.Home.Page .Items {
+    margin-top: 5px;
+}
+.Home.Page .Items > .Item {
+    position: relative;
+    padding: 5px 16px;
+}
+.Home.Page .Items > .Item.focus {
+    background: var(--colorPrimary20);
+}
+.Home.Page .Items > .Item .Right {
+    margin-left: 10px;
+}
+.Home.Page .Items > .Item .Icon {
+    width: 42px;
+    height: 42px;
+}
+.Home.Page .Items > .Item .Info {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.Home.Page .Items > .Item .Subtitle {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.5);
+}

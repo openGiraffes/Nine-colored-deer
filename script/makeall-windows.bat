@@ -1,0 +1,1 @@
+electron-forge make --platform=win32 --arch=x64 && electron-forge make --platform=win32 --arch=ia32 && electron-forge make --platform=win32 --arch=arm64

@@ -1,0 +1,9 @@
+.About.Page {
+    font-size: 12px;
+}
+.About.Page .Content {
+    padding: 12px;
+}
+.About.Page .UpdateTime {
+    background: rgba(0, 0, 0, 0.1);
+}

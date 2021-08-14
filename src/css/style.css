@@ -1,0 +1,52 @@
+* {
+    word-break: break-all;
+    box-sizing: border-box;
+    /* outline: 0; */
+}
+
+.pointer {
+    cursor: pointer;
+}
+.no-select {
+    user-select: none;
+}
+
+.button {
+    cursor: pointer;
+    user-select: none;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.w-0 {
+    width: 0;
+}
+
+.h-0 {
+    height: 0;
+}
+
+.wh-100 {
+    width: 100%;
+    height: 100%;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(237, 211, 255);
+}

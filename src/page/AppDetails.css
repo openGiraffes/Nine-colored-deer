@@ -1,0 +1,129 @@
+.AppDetails.Page .Content {
+}
+.AppDetails.Page .Content > .Icon {
+    width: 48px;
+    height: 48px;
+    margin-top: 5px;
+}
+.AppDetails.Page .Content > .Name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.AppDetails.Page .Content > .Tags {
+    margin-top: 3px;
+    /* overflow: -moz-scrollbars-none; */
+}
+.AppDetails.Page .Content > .Tags > .Item {
+    border-radius: 10px;
+    font-size: 10px;
+    background: #00ce3e;
+    color: white;
+    padding: 0px 5px;
+    flex-shrink: 0;
+}
+.AppDetails.Page .Content > .Tags > .Item.Warning {
+    background: #ce0700;
+}
+.AppDetails.Page .Content > .Tags > .Item + .Item {
+    margin-left: 7px;
+}
+.AppDetails.Page .Content > .Tabs {
+    /* margin-top: 5px; */
+    position: relative;
+    padding: 0 20px;
+    /* overflow: -moz-scrollbars-none; */
+}
+.AppDetails.Page .Content > .Tabs > .Item {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    position: relative;
+    height: 28px;
+    padding: 0 7px;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+.AppDetails.Page .Content > .Tabs > .Item[selected] .Name {
+    color: rgba(0, 0, 0, 1);
+    transform: scale(1.1);
+}
+.AppDetails.Page .Content > .Tabs > .Item[selected]::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 2px;
+    border-radius: 2px;
+    width: 20px;
+    content: "";
+    background: var(--colorPrimary);
+}
+.AppDetails.Page .Content > .Tabs > .Item.focus::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 20px;
+    border-radius: 15px;
+    width: 100%;
+    content: "";
+    background: var(--colorPrimary);
+    opacity: 0.2;
+}
+.AppDetails.Page .Content > .Part {
+    padding: 7px 16px;
+}
+.AppDetails.Page .Content > .Details > * + * {
+    margin-top: 3px;
+}
+.AppDetails.Page .Content > .Details > .ScreenshotsLayout {
+    /* overflow: -moz-scrollbars-none; */
+}
+.AppDetails.Page .Content > .Details > .ScreenshotsLayout > .Item {
+    border-radius: 5px;
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    flex-shrink: 0;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.AppDetails.Page .Content > .Details > .ScreenshotsLayout > .Item.focus {
+    border: 2px solid var(--colorPrimary);
+}
+.AppDetails.Page .Content > .Details > .ScreenshotsLayout > .Item + .Item {
+    margin-left: 7px;
+}
+.AppDetails.Page .Content > .Details > .VersionLayout {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.AppDetails.Page .Content > .Details > .VersionLayout > * + * {
+    margin-left: 10px;
+}
+.AppDetails.Page .Content > .Details > .Description {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.AppDetails.Page .Content > .Details > .Author {
+    font-size: 10px;
+    color: var(--colorPrimary);
+}
+.AppDetails.Page .Content > .Details > .Tags,
+.AppDetails.Page .Content > .Details > .Maintainer,
+.AppDetails.Page .Content > .Details > .Dependencies,
+.AppDetails.Page .Content > .Details > .Locales,
+.AppDetails.Page .Content > .Details > .License {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.AppDetails.Page .Content > .Details > .Description.focus,
+.AppDetails.Page .Content > .Details > .Author.focus,
+.AppDetails.Page .Content > .Details > .VersionLayout.focus,
+.AppDetails.Page .Content > .Details > .Tags.focus,
+.AppDetails.Page .Content > .Details > .Maintainer.focus,
+.AppDetails.Page .Content > .Details > .Dependencies.focus,
+.AppDetails.Page .Content > .Details > .Locales.focus,
+.AppDetails.Page .Content > .Details > .License.focus {
+    background: var(--colorPrimary20);
+}

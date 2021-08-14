@@ -1,0 +1,51 @@
+.Scan.Page .NavigationBar {
+    color: white;
+}
+.Scan.Page .Content {
+    background: black;
+}
+.Scan.Page .Content > .Video {
+    object-fit: cover;
+}
+
+.Scan.Page .Content > .corner-nw,
+.Scan.Page .Content > .corner-no,
+.Scan.Page .Content > .corner-so,
+.Scan.Page .Content > .corner-sw {
+    border: #fff 6px solid;
+    height: 30px;
+    position: fixed;
+    width: 30px;
+}
+
+.Scan.Page .Content > .corner-nw {
+    border-bottom: 0;
+    border-right: 0;
+    border-top-left-radius: 20px;
+    left: 20px;
+    top: calc(var(--dimenStatusBarHeight) + 20px);
+}
+
+.Scan.Page .Content > .corner-no {
+    border-bottom: 0;
+    border-left: 0;
+    border-top-right-radius: 20px;
+    right: 20px;
+    top: calc(var(--dimenStatusBarHeight) + 20px);
+}
+
+.Scan.Page .Content > .corner-so {
+    border-bottom-right-radius: 20px;
+    border-left: 0;
+    border-top: 0;
+    bottom: calc(var(--dimenNavigationBarHeight) + 20px);
+    right: 20px;
+}
+
+.Scan.Page .Content > .corner-sw {
+    border-bottom-left-radius: 20px;
+    border-right: 0;
+    border-top: 0;
+    bottom: calc(var(--dimenNavigationBarHeight) + 20px);
+    left: 20px;
+}

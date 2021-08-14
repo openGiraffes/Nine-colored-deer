@@ -1,0 +1,86 @@
+.NavigationBar {
+    width: 100%;
+    height: var(--dimenNavigationBarHeight);
+    font-size: 12px;
+    color: black;
+    position: relative;
+    /* background: rgba(0, 0, 0, 1); */
+}
+
+.NavigationBar > .Left,
+.NavigationBar > .Center,
+.NavigationBar > .Right {
+    position: absolute;
+}
+
+.NavigationBar > .Left {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.NavigationBar > .Right {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.NavigationBar > .Center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* color: white;
+    background: var(--colorPrimary); */
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.ToolBar {
+    height: var(--dimenToolBarHeight);
+    background: var(--colorPrimary);
+    box-shadow: 0 2px 2px #00000016;
+    z-index: 1;
+}
+
+.ToolBar > .Title {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 16px;
+}
+
+.Page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: white;
+}
+
+.Page > .StatusBar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: var(--dimenStatusBarHeight);
+    background: var(--colorPrimary);
+}
+
+.Page > .ToolBar {
+    position: absolute;
+    left: 0;
+    top: var(--dimenStatusBarHeight);
+}
+
+.Page > .NavigationBar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.Page > .PageContent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* margin-top: calc(#{$dimenStatusBarHeight} + #{$dimenToolBarHeight}); */
+}
